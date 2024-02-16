@@ -23,17 +23,29 @@ export class StationController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-  return this.stationService.findOne(+id);
+  async findOne(@Param('id') id: string) {
+ try{  return await this.stationService.findOne(+id);
+  } catch
+  { 
+  throw new BadRequestException('A keresett ID nem található')
+  }
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateStationDto: UpdateStationDto) {
-    return this.stationService.update(+id, updateStationDto);
+  async update(@Param('id') id: string, @Body() updateStationDto: UpdateStationDto) {
+    try{
+    return await this.stationService.update(+id, updateStationDto);
+    } catch{
+      throw new BadRequestException('A keresett ID nem található')
+    }
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.stationService.remove(+id);
+   async remove(@Param('id') id: string) {
+    try{
+    return await this.stationService.remove(+id);
+    }catch{
+      throw new BadRequestException('A keresett ID nem található')
+    }
   }
 }
