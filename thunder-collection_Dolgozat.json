@@ -1,0 +1,94 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Dolgozat",
+    "dateExported": "2024-02-16T10:35:58.733Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b3079a13-1ffd-47c5-95c8-900ee7a0ed1e",
+            "colId": "ef3bd4ed-5324-4fe2-8d9d-811e6ece0d0b",
+            "containerId": "",
+            "name": "http://localhost:3000/station",
+            "url": "http://localhost:3000/station",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-16T10:31:10.877Z",
+            "modified": "2024-02-16T10:31:10.877Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"location\":\"Legnagyobb falu 2\",\n  \"ipAddress\":\"192.168.1.53\",\n  \"batteryCapacity\":4500\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "14dff7d2-64ce-4a76-8ad5-c88a07356523",
+            "colId": "ef3bd4ed-5324-4fe2-8d9d-811e6ece0d0b",
+            "containerId": "",
+            "name": "http://localhost:3000/station",
+            "url": "http://localhost:3000/station",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-16T10:31:23.716Z",
+            "modified": "2024-02-16T10:31:23.716Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"location\":\"Legnagyobb falu 2\",\n  \"ipAddress\":\"192.168.1.53\",\n  \"batteryCapacity\":4500\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa0ed88f-4207-4712-ab66-1b5590c469f3",
+            "colId": "ef3bd4ed-5324-4fe2-8d9d-811e6ece0d0b",
+            "containerId": "",
+            "name": "http://localhost:3000/station/1",
+            "url": "http://localhost:3000/station/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-16T10:31:55.100Z",
+            "modified": "2024-02-16T10:31:55.100Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "178e04d0-ebf7-4553-ab6f-a0d695736395",
+            "colId": "ef3bd4ed-5324-4fe2-8d9d-811e6ece0d0b",
+            "containerId": "",
+            "name": "http://localhost:3000/station/1",
+            "url": "http://localhost:3000/station/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-16T10:32:28.242Z",
+            "modified": "2024-02-16T10:32:28.242Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3e55b1dd-dffa-47a0-90a0-8ed2b87059d6",
+            "colId": "ef3bd4ed-5324-4fe2-8d9d-811e6ece0d0b",
+            "containerId": "",
+            "name": "http://localhost:3000/station/3",
+            "url": "http://localhost:3000/station/3",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-02-16T10:35:48.044Z",
+            "modified": "2024-02-16T10:35:48.044Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"location\":\"Falu\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

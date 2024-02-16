@@ -9,3 +9,12 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+
+model station{
+  id Int @id @default(autoincrement())
+  location String 
+  ipAddress String @unique
+  batteryCapacity Int
+  batteryCharge Int
+}
